@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
+/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 10:38:12 by rafaelherin       #+#    #+#             */
-/*   Updated: 2025/10/17 11:04:10 by rafaelherin      ###   ########.fr       */
+/*   Updated: 2025/11/05 16:09:55 by rheringe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap(const std::string name)
     hitPoints_(10),
     energyPoints_(10),
     attackDamage_(0) {
-    std::cout << "Default Constructor called!" << std::endl;
+    std::cout << "Default Constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other)
@@ -25,7 +25,7 @@ ClapTrap::ClapTrap(const ClapTrap& other)
     hitPoints_(other.hitPoints_),
     energyPoints_(other.energyPoints_),
     attackDamage_(other.attackDamage_) {
-    std::cout << "Copy constructorr called" << std::endl;
+    std::cout << "Copy constructor called" << std::endl;
 }
 
 ClapTrap::~ClapTrap(){

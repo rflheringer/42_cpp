@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
+/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 12:28:41 by rafaelherin       #+#    #+#             */
-/*   Updated: 2025/10/17 11:46:06 by rafaelherin      ###   ########.fr       */
+/*   Updated: 2025/11/05 16:09:41 by rheringe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

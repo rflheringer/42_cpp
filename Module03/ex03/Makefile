@@ -6,6 +6,7 @@ NAME	=	DiamondTrap
 SRCS	=	./src/main.cpp \
 			./src/ScavTrap.cpp \
 			./src/ClapTrap.cpp \
+			./src/FragTrap.cpp \
 			./src/DiamondTrap.cpp
 OBJ	    =	./obj
 OBJS	=	$(addprefix $(OBJ)/, $(notdir $(SRCS:.cpp=.o)))

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
+/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 13:20:36 by rafaelherin       #+#    #+#             */
-/*   Updated: 2025/10/08 13:52:22 by rafaelherin      ###   ########.fr       */
+/*   Updated: 2025/11/05 16:13:17 by rheringe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

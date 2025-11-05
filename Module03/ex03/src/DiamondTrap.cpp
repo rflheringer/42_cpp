@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
+/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 12:33:36 by rafaelherin       #+#    #+#             */
-/*   Updated: 2025/10/17 15:08:28 by rafaelherin      ###   ########.fr       */
+/*   Updated: 2025/11/05 16:10:21 by rheringe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ DiamondTrap::DiamondTrap(const std::string name)
         hitPoints_ = FragTrap::hitPoints_;
         energyPoints_ = ScavTrap::energyPoints_;
         attackDamage_ = FragTrap::attackDamage_;
-        std::cout << "DiamondTrap default constructor called!" << std::endl;
+        std::cout << "DiamondTrap default constructor called" << std::endl;
     }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& other)
@@ -34,7 +34,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap& other)
 }
 
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other){
-    std::cout << "Diamond copy constructor called!" << std::endl;
+    std::cout << "Diamond copy constructor called" << std::endl;
     if (this != &other){
         ClapTrap::operator=(other);
         ScavTrap::operator=(other);
