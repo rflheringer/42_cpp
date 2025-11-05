@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Point.hpp                                          :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 16:07:30 by rheringe          #+#    #+#             */
-/*   Updated: 2025/10/20 11:00:52 by rafaelherin      ###   ########.fr       */
+/*   Created: 2025/10/17 15:55:15 by rafaelherin       #+#    #+#             */
+/*   Updated: 2025/10/20 17:29:31 by rafaelherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef POINT_HPP
-#define POINT_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
 
-#include "Fixed.hpp"
+#include "Animal.hpp"
 
-class Point{
-	private:
-		Fixed const x_;
-		Fixed const y_;
-	public:
-		Point();
-		Point(const float fx, const float fy);
-		Point(const Point& other);
-		Point& operator = (const Point& other);
-		~Point();
-		Fixed getX() const;
-		Fixed getY() const;
+class Dog : public Animal{
+    private:
+
+    public:
+        Dog();
+        Dog(const Dog& other);
+        Dog& operator=(const Dog& other);
+        ~Dog();
+
+        void makeSound() const;
 };
 
-bool	bsp(Point const a, Point const b, Point const c, Point const point);
-
-#endif /* POINT_HPP */
+#endif /* DOG_HPP */

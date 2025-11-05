@@ -1,12 +1,14 @@
 CC		=	c++
 CFLAGS	=	-Wall -Werror -Wextra -std=c++98 -I.
 
-NAME	=	bsp
+NAME	=	Animal
 
 SRCS	=	./src/main.cpp \
-			./src/Fixed.cpp \
-			./src/bsp.cpp \
-			./src/Point.cpp
+			./src/Animal.cpp \
+			./src/Dog.cpp \
+			./src/Cat.cpp \
+			.src/WrongAnimal.cpp \
+			./src/WrongCat.cpp 
 OBJ	    =	./obj
 OBJS	=	$(addprefix $(OBJ)/, $(notdir $(SRCS:.cpp=.o)))
 INC		=	$(wildcard *.hpp)

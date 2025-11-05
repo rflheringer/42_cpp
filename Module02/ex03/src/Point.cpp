@@ -3,34 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   Point.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 16:05:57 by rheringe          #+#    #+#             */
-/*   Updated: 2025/09/29 16:40:39 by rheringe         ###   ########.fr       */
+/*   Updated: 2025/10/20 11:48:16 by rafaelherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Point.hpp"
+#include "../include/Point.hpp"
 
 Point::Point() : x_(0), y_(0){
-	std::cout << "Default constructor called" << std::endl;
+	//std::cout << "Default constructor called" << std::endl;
 }
 
 Point::Point(const float fx, const float fy) : x_(fx), y_(fy){
-	std::cout << "Float constructor called" << std::endl;
+	//std::cout << "Float constructor called" << std::endl;
 }
 
 Point::Point(const Point& other) : x_(other.x_), y_(other.y_){
-	std::cout << "Copy constructor called" << std::endl;
+	//std::cout << "Copy constructor called" << std::endl;
 }
 
 Point& Point::operator=(const Point& other){
-	std::cout << "Copy assignment constuctor called" << std::endl;
+	//std::cout << "Copy assignment constuctor called" << std::endl;
 	(void)other;
 	return *this;
 }
 
 Point::~Point(){
-	std::cout << "Destructor Called" << std::endl;
+	//std::cout << "Destructor Called" << std::endl;
 }
 
+Fixed	Point::getX() const {
+	return x_;
+}
+
+Fixed	Point::getY() const {
+	return y_;
+}

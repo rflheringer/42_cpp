@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rheringe <rheringe@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 10:47:11 by rafaelherin       #+#    #+#             */
-/*   Updated: 2025/09/29 16:07:22 by rheringe         ###   ########.fr       */
+/*   Updated: 2025/10/20 11:33:56 by rafaelherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,33 @@ class Fixed{
         Fixed(const Fixed& other);
         Fixed& operator = (const Fixed& other);
         ~Fixed();
+        
+		bool	operator > (const Fixed& other) const;
+		bool	operator < (const Fixed& other) const;
+		bool	operator >= (const Fixed& other) const;
+		bool	operator <= (const Fixed& other) const;
+		bool	operator == (const Fixed& other) const;
+		bool	operator != (const Fixed& other) const;
+		
+		Fixed	operator + (const Fixed& other) const;
+		Fixed	operator - (const Fixed& other) const;
+		Fixed	operator * (const Fixed& other) const;
+		Fixed	operator / (const Fixed& other) const;
+
+		Fixed& operator++();
+		Fixed operator++(int);
+		Fixed& operator--();
+		Fixed operator--(int);
+
 		int		toInt(void) const;
 		float	toFloat(void) const;
         int     getRawBits(void) const;
         void    setRawBits(int const raw);
+
+		static Fixed& min(Fixed& a, Fixed& b);
+		static const Fixed& min(const Fixed& a, const Fixed& b);
+		static Fixed& max(Fixed& a, Fixed& b);
+		static const Fixed& max(const Fixed& a, const Fixed& b);
 };
 
 std::ostream& operator<<(std::ostream& os, const Fixed& obj);

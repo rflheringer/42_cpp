@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Point.hpp                                          :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelheringer <rafaelheringer@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 16:07:30 by rheringe          #+#    #+#             */
-/*   Updated: 2025/10/20 11:00:52 by rafaelherin      ###   ########.fr       */
+/*   Created: 2025/10/17 16:53:56 by rafaelherin       #+#    #+#             */
+/*   Updated: 2025/10/20 19:29:09 by rafaelherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef POINT_HPP
-#define POINT_HPP
+#ifndef WRONG_CAT_HPP
+#define WRONG_CAT_HPP
 
-#include "Fixed.hpp"
+#include "WrongAnimal.hpp"
 
-class Point{
-	private:
-		Fixed const x_;
-		Fixed const y_;
-	public:
-		Point();
-		Point(const float fx, const float fy);
-		Point(const Point& other);
-		Point& operator = (const Point& other);
-		~Point();
-		Fixed getX() const;
-		Fixed getY() const;
+class WrongCat {
+    private:
+
+    public:
+        WrongCat();
+        WrongCat(const WrongCat& other);
+        WrongCat& operator=(const WrongCat& other);
+        ~WrongCat();
+
+        void makeSound() const;
 };
 
-bool	bsp(Point const a, Point const b, Point const c, Point const point);
-
-#endif /* POINT_HPP */
+#endif /* WRONG_CAT_HPP */
